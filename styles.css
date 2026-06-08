@@ -1,0 +1,172 @@
+:root {
+  --mpa-primary: #1a5fb4;
+  --mpa-primary-dark: #0d3d7a;
+  --mpa-accent: #f5a623;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+  padding-top: 56px;
+}
+
+/* Navbar */
+.navbar-brand {
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+}
+
+.nav-link {
+  font-weight: 500;
+  transition: opacity 0.3s ease;
+}
+
+.nav-link:hover {
+  opacity: 0.85;
+}
+
+/* Carrusel */
+.carousel-section {
+  margin-top: -56px;
+}
+
+.carousel-slide {
+  height: 85vh;
+  min-height: 450px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.carousel-slide::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(13, 61, 122, 0.75), rgba(26, 95, 180, 0.55));
+}
+
+.slide-1 {
+  background-image: url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1600&q=80');
+}
+
+.slide-2 {
+  background-image: url('https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=1600&q=80');
+}
+
+.slide-3 {
+  background-image: url('https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=1600&q=80');
+}
+
+.carousel-caption {
+  bottom: 30%;
+  z-index: 1;
+}
+
+.carousel-caption h1 {
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  font-weight: 700;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  margin-bottom: 1rem;
+}
+
+.carousel-caption p {
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  max-width: 600px;
+  margin: 0 auto 1.5rem;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.carousel-lema {
+  font-style: italic;
+  font-weight: 500;
+}
+
+/* Secciones */
+.section-title {
+  font-weight: 700;
+  color: var(--mpa-primary-dark);
+  margin-bottom: 1rem;
+}
+
+.about-card {
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  border-left: 4px solid var(--mpa-primary);
+}
+
+.icon-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  flex-shrink: 0;
+}
+
+/* Valores */
+.value-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.value-icon {
+  font-size: 2.5rem;
+  color: var(--mpa-primary);
+}
+
+/* Actividades */
+.activity-card {
+  border-radius: 12px !important;
+  transition: transform 0.3s ease;
+}
+
+.activity-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Animación al hacer scroll */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Bootstrap overrides */
+.bg-primary {
+  background-color: var(--mpa-primary) !important;
+}
+
+.btn-primary {
+  background-color: var(--mpa-primary);
+  border-color: var(--mpa-primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--mpa-primary-dark);
+  border-color: var(--mpa-primary-dark);
+}
+
+@media (max-width: 768px) {
+  .carousel-slide {
+    height: 70vh;
+    min-height: 400px;
+  }
+
+  .carousel-caption {
+    bottom: 20%;
+    padding: 0 1rem;
+  }
+}

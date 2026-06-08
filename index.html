@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MPA - Movimiento Pandillas de la Amistad</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#inicio">
+        <i class="bi bi-people-fill me-2"></i>MPA
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#inicio">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#nosotros">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#lineas">Formación</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#actividades">Actividades</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Carrusel -->
+  <section id="inicio" class="carousel-section">
+    <div id="mpaCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#mpaCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Diapositiva 1"></button>
+        <button type="button" data-bs-target="#mpaCarousel" data-bs-slide-to="1" aria-label="Diapositiva 2"></button>
+        <button type="button" data-bs-target="#mpaCarousel" data-bs-slide-to="2" aria-label="Diapositiva 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="carousel-slide slide-1">
+            <div class="carousel-caption">
+              <h1>Movimiento Pandillas de la Amistad</h1>
+              <p class="carousel-lema">"Unidos todos para formar un mundo mejor"</p>
+              <a href="#nosotros" class="btn btn-light btn-lg">Conócenos</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-slide slide-2">
+            <div class="carousel-caption">
+              <h1>Formación integral</h1>
+              <p>Acompañamos a niños y adolescentes en su crecimiento espiritual, humano y apostólico.</p>
+              <a href="#actividades" class="btn btn-light btn-lg">Ver actividades</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-slide slide-3">
+            <div class="carousel-caption">
+              <h1>Retiros y convivencias</h1>
+              <p>Vivimos jornadas de reflexión, oración y dinámicas que fortalecen la fe y la amistad.</p>
+              <a href="#contacto" class="btn btn-light btn-lg">Únete</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#mpaCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#mpaCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Nosotros -->
+  <section id="nosotros" class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <h2 class="section-title">¿Qué es el MPA?</h2>
+          <p class="lead text-muted">
+            El <strong>Movimiento Pandillas de la Amistad (MPA)</strong> es una agrupación católica
+            de formación integral para niños y adolescentes, generalmente entre <strong>11 y 16 años</strong>.
+          </p>
+          <p>
+            Nació el <strong>14 de febrero de 1973</strong> en Toluca, México, impulsado por el
+            <strong>Padre Antonio Zamora</strong>. Hoy cuenta con presencia activa en varios países
+            de Latinoamérica.
+          </p>
+          <p>
+            El MPA busca acercar a la juventud a la fe mediante dinámicas, convivencias y retiros
+            espirituales, formando pandillas que viven el lema:
+            <em>"Unidos todos para formar un mundo mejor"</em>.
+          </p>
+        </div>
+        <div class="col-lg-6">
+          <div class="about-card p-4 rounded-4 shadow-sm mb-3">
+            <div class="d-flex align-items-center mb-3">
+              <div class="icon-circle bg-primary text-white me-3">
+                <i class="bi bi-calendar-heart"></i>
+              </div>
+              <div>
+                <h5 class="mb-0">Nuestra historia</h5>
+                <small class="text-muted">Desde 1973 en Toluca, México</small>
+              </div>
+            </div>
+            <p class="mb-0">
+              Fundado por el Padre Antonio Zamora, el movimiento ha crecido y se extiende por
+              distintas parroquias y diócesis de Latinoamérica, manteniendo su identidad católica
+              y su enfoque en la formación juvenil.
+            </p>
+          </div>
+          <div class="about-card p-4 rounded-4 shadow-sm">
+            <div class="d-flex align-items-center mb-3">
+              <div class="icon-circle bg-primary text-white me-3">
+                <i class="bi bi-bullseye"></i>
+              </div>
+              <div>
+                <h5 class="mb-0">Objetivo</h5>
+                <small class="text-muted">Fe, amistad y servicio</small>
+              </div>
+            </div>
+            <p class="mb-0">
+              Acercar a los jóvenes a la fe a través de experiencias grupales, retiros y
+              actividades apostólicas, guiados por asesores adultos y jóvenes con experiencia.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Líneas de formación -->
+  <section id="lineas" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title text-center mb-2">Líneas de formación</h2>
+      <p class="text-center text-muted mb-5">
+        El crecimiento de los participantes se trabaja a través de cinco líneas fundamentales:
+      </p>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-6 col-lg-4">
+          <div class="value-card text-center p-4 h-100">
+            <div class="value-icon mb-3">
+              <i class="bi bi-book-heart"></i>
+            </div>
+            <h5>Espiritual</h5>
+            <p class="text-muted mb-0">Acercamiento a los valores cristianos y vivencia de la fe.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="value-card text-center p-4 h-100">
+            <div class="value-icon mb-3">
+              <i class="bi bi-people-fill"></i>
+            </div>
+            <h5>MP (Movimiento / Pandilla)</h5>
+            <p class="text-muted mb-0">Integración grupal y trabajo en equipo dentro de la pandilla.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="value-card text-center p-4 h-100">
+            <div class="value-icon mb-3">
+              <i class="bi bi-person-hearts"></i>
+            </div>
+            <h5>Desarrollo Humano</h5>
+            <p class="text-muted mb-0">Crecimiento personal y emocional de cada participante.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="value-card text-center p-4 h-100">
+            <div class="value-icon mb-3">
+              <i class="bi bi-hand-index-thumb"></i>
+            </div>
+            <h5>Apostólica</h5>
+            <p class="text-muted mb-0">Servicio a la comunidad y compromiso con los demás.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="value-card text-center p-4 h-100">
+            <div class="value-icon mb-3">
+              <i class="bi bi-chat-heart"></i>
+            </div>
+            <h5>Convivencia</h5>
+            <p class="text-muted mb-0">Interacción sana y respetuosa con su entorno.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Actividades y símbolos -->
+  <section id="actividades" class="py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-2">Símbolos y actividades</h2>
+      <p class="text-center text-muted mb-5">
+        Elementos que dan identidad al movimiento y marcan la experiencia de cada pandilla.
+      </p>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card activity-card h-100 border-0 shadow-sm">
+            <div class="card-body">
+              <span class="badge bg-primary mb-2">Central</span>
+              <h5 class="card-title">Retiros espirituales</h5>
+              <p class="card-text text-muted">
+                Son los eventos centrales del MPA. Los participantes viven jornadas de reflexión,
+                oración y dinámicas organizadas por asesores adultos y jóvenes con experiencia.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card activity-card h-100 border-0 shadow-sm">
+            <div class="card-body">
+              <span class="badge bg-success mb-2">Símbolo</span>
+              <h5 class="card-title">Himno del MPA</h5>
+              <p class="card-text text-muted">
+                Promueve la amistad, la unión y el amor al prójimo. Es una expresión de la
+                identidad y el espíritu que une a todas las pandillas.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card activity-card h-100 border-0 shadow-sm">
+            <div class="card-body">
+              <span class="badge bg-warning text-dark mb-2">Identidad</span>
+              <h5 class="card-title">Material oficial</h5>
+              <p class="card-text text-muted">
+                El movimiento se guía por un manual con el reglamento, las dinámicas y las
+                <strong>Leyes de la Pandilla</strong>, que preservan la identidad del MPA.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row g-4 mt-2">
+        <div class="col-md-6">
+          <div class="card activity-card h-100 border-0 shadow-sm">
+            <div class="card-body">
+              <span class="badge bg-info text-dark mb-2">Convivencia</span>
+              <h5 class="card-title">Dinámicas y encuentros</h5>
+              <p class="card-text text-muted mb-0">
+                Reuniones regulares de pandilla con juegos, reflexiones y actividades que
+                fortalecen la amistad y el sentido de pertenencia.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card activity-card h-100 border-0 shadow-sm">
+            <div class="card-body">
+              <span class="badge bg-secondary mb-2">Apostolado</span>
+              <h5 class="card-title">Servicio comunitario</h5>
+              <p class="card-text text-muted mb-0">
+                Proyectos y acciones en favor de la comunidad parroquial y local, en línea
+                con la formación apostólica del movimiento.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="py-5 bg-primary text-white">
+    <div class="container text-center">
+      <h2 class="section-title text-white mb-3">¿Cómo unirse al MPA?</h2>
+      <p class="lead mb-3">
+        El MPA es un movimiento de alcance local. Para conocer fechas de retiros,
+        requisitos de edad o el proceso de inscripción, lo mejor es acercarse a tu entorno cercano.
+      </p>
+      <p class="mb-4 opacity-75">
+        Consulta en tu <strong>parroquia local</strong> o busca en las redes sociales de las
+        <strong>pastorales juveniles de tu diócesis</strong> para encontrar la pandilla más cercana.
+      </p>
+      <div class="d-flex justify-content-center gap-3 flex-wrap">
+        <a href="#nosotros" class="btn btn-light btn-lg">
+          <i class="bi bi-info-circle me-2"></i>Más información
+        </a>
+        <a href="#" class="btn btn-outline-light btn-lg">
+          <i class="bi bi-facebook me-2"></i>Pastoral juvenil
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-4 bg-dark text-white text-center">
+    <div class="container">
+      <p class="mb-0">
+        &copy; <span id="year"></span> Movimiento Pandillas de la Amistad (MPA). Todos los derechos reservados.
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
